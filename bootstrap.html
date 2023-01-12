@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc4984a0b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- MODAL -->
+
+    <div
+      class="modal fade in"
+      id="Modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cookies</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            We would like to inform you below about how Glory processes your
+            personal data, for what purpose and for how long and what are your
+            rights. The given Privacy and Cookie Policy include information
+            primarily on the processing of personal data in: Online shopping
+            using the loyalty program, sending news in the form of newsletters,
+            participate in satisfaction surveys, contests, or events that we
+            organize.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="butn">Learn more</button>
+            <button type="button" class="butn" data-bs-dismiss="modal">
+              Accept cookies
+              <i class="fa-solid fa-cookie"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav
+      class="navbar fixed-top navbar-expand-md navbar-light bg-light"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="bootstrap.html">
+          <div class="name--tag">GLORY</div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse-hamburger"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapse-hamburger">
+          <div class="navbar-nav">
+            <a
+              class="nav-link nav-link-hamburger"
+              aria-current="page"
+              href="#home"
+              >Home</a
+            >
+            <a class="nav-link nav-link-hamburger" href="#about">About us</a>
+            <a class="nav-link nav-link-hamburger" href="#aktuality"> News</a>
+            <a class="nav-link nav-link-hamburger" href="#cenik">Price list</a>
+            <a class="nav-link nav-link-hamburger" href="#kontakt">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+
+    <header id="home">
+      <div class="header--info">
+        <div class="back--img__header"></div>
+        <div class="header--title">
+          <div class="header--padd">
+            <h1>GLORY</h1>
+            <p>
+              Shopping online has never been this comfortable and easy! Now you
+              are just a few clicks to get your order delivered even today. Save
+              your time, shop online via Glory shopping service now and we will
+              deliver your order on the same day.
+            </p>
+            <button
+              type="button"
+              class="butn"
+              data-bs-toggle="modal"
+              data-bs-target="#Modal"
+            >
+              About us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- O NÁS -->
+
+    <section class="container-fluid section--about-us" id="about">
+      <h2 class="about-us__title">About us</h2>
+      <div class="row">
+        <div class="col-md-8 about-carousel">
+          <div class="carousel--about">
+            <div id="carouselFirm" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselFirm"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselFirm"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselFirm"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/fidel-fernando-DKWZrV0Ty14-unsplash.jpg"
+                    class="d-block w-100"
+                    alt="Firm 1"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Safely packed</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/ismael-paramo-Cns0h4ypRyA-unsplash.jpg"
+                    class="d-block w-100"
+                    alt="Firm 2"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Food prep</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/jon-tyson-UuzUfw4qepk-unsplash.jpg"
+                    class="d-block w-100"
+                    alt="Firm 3"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Quick delivery</h5>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselFirm"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselFirm"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 about-paragraph">
+          <h3>Services</h3>
+          <p class="about-us-text">
+            Getting home-delivered food is more than your life made easy.
+            <span
+              class="longer-word"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-title="Delivered"
+              >consectetur</span
+            >
+            Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience stores, and more.
+            <span
+              class="longer-word"
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              data-bs-title="Delight"
+              >voluptates</span
+            >
+            You’ll see when your rider’s picked up your order, and be able to follow them along the way. You’ll get a notification when they’re nearby, too.
+            <span
+              class="longer-word"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-title="Praise"
+              >Laudantium</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKTUALITY -->
+
+    <section class="container-fluid aktuality" id="aktuality">
+      <h2 class="aktuality--title">News</h2>
+      <div
+        class="row row-cols-md-2 row-cols-lg-2 row-cols-xl-3 justify-content-evenly sekce-aktuality"
+      >
+        <div class="aktuality--cards">
+          <div class="card-img d-none d-sm-block">
+            <img
+              class="img-fluid"
+              src="img/dad-hotel-NmJZPhAQloo-unsplash.jpg"
+              alt="obrázek 1"
+            />
+          </div>
+          <div class="card-text">
+            <h3>Strawberry shake</h3>
+            <p>
+              You only need two ingredients to make a great milkshake: ice cream
+              and milk. Mixed with our new strawberry flavour, it's a perfect
+              party drink.
+            </p>
+          </div>
+        </div>
+
+        <div class="aktuality--cards">
+          <div class="card-img d-none d-sm-block">
+            <img
+              class="img-fluid"
+              src="img/you-le-SSOQvW4Am2k-unsplash.jpg"
+              alt="obrázek 2"
+            />
+          </div>
+          <div class="card-text">
+            <h3>German Beef Roulade</h3>
+            <p>
+              Beef roulades are a traditional German main dish. Learn how to
+              make delicious roulades filled with onions, pickled cucumbers,
+              bacon and a ton of cheese.
+            </p>
+          </div>
+        </div>
+
+        <div class="aktuality--cards">
+          <div class="card-img d-none d-sm-block">
+            <img
+              class="img-fluid"
+              src="img/dad-hotel-qCZ32t9RAX4-unsplash.jpg"
+              alt="obrázek 3"
+            />
+          </div>
+          <div class="card-text">
+            <h3>Delicious fluffy pancakes</h3>
+            <p>
+              You have no idea what to take for breakfast, lunch or dinner? Make
+              these soft, yummy pancakes out of only a handful of ingredients
+              that are sure to be found in every kitchen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CENÍK -->
+
+    <section class="container-fluid" id="cenik">
+      <h2 class="cenik--title">Price list</h2>
+      <div class="cenik-table">
+        <p>The shipment cost is added to the cost of the overall delivery.</p>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col"></th>
+                <th scope="col">Within 3 hours</th>
+                <th scope="col">Today</th>
+                <th scope="col">Tomorrow</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="table-dark">
+                <th scope="row">Under 10 kg</th>
+                <td>4€</td>
+                <td>2.5€</td>
+                <td>2€</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">Under 20kg</th>
+                <td>5€</td>
+                <td>3€</td>
+                <td>2.5€</td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">Above 20 kg</th>
+                <td>6€</td>
+                <td>5€</td>
+                <td>free</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKTY -->
+
+    <footer class="container-fluid" id="kontakt">
+      <h2 class="kontakt--title">Contact</h2>
+      <div class="row sekce--kontakt">
+        <div class="col-md-6">
+          <ul class="kontakt--list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>
+                Technical University of Ostrava <br />
+                Ostrava 17. listopadu 2172/15, 708 00 <br />
+                Ostrava-Poruba
+              </span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>
+                <a href="mailto:emailadresa@gmail.com">
+                  emailadresa@gmail.com</a
+                ></span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i> <span> +420 654 666 542</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="kontakt--mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.620950079244!2d18.160679315927904!3d49.83078903969968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e4e2d424e2c5%3A0xfe99a98da4b6280a!2zVnlzb2vDoSDFoGtvbGEgQsOhxYhza8OhLXRlY2huaWNrw6EgVW5pdmVyeml0YSBPc3RyYXZh!5e0!3m2!1scs!2scz!4v1673005041726!5m2!1scs!2scz"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact--form">
+          <form class="footer__form">
+            <fieldset>
+              <legend><h3>Contact form</h3></legend>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingName"
+                  placeholder="Your Name"
+                  required
+                />
+                <label for="floatingName">Name *</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingEmail"
+                  placeholder="example@gmail.com"
+                  required
+                />
+                <label for="floatingEmail">E-mail *</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingSubject"
+                  placeholder="Subject"
+                />
+                <label for="floatingSubject">Subject</label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  style="height: 15rem"
+                  placeholder="Leave a message"
+                  id="floatingTextarea"
+                  required
+                ></textarea>
+                <label for="floatingTextarea">Leave a message...</label>
+              </div>
+              <div class="kontakt__btn">
+                <button type="submit" value="Send" class="butn kontakt-button">
+                  Send
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact--nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Privacy policy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessibility statement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+  </body>
+</html>
